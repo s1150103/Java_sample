@@ -28,6 +28,63 @@ Animal（抽象クラス・親）
 - `makeSound()` は抽象メソッドで、各子クラスが実装する
 - `eat()` は共通メソッドで、全子クラスで共通利用できる
 
+## Gitコマンド一覧
+
+### 初期設定
+
+```bash
+# リポジトリを初期化する
+git init
+
+# リモートリポジトリを登録する
+git remote add origin https://github.com/ユーザー名/リポジトリ名.git
+
+# ブランチ名をmainに変更する
+git branch -M main
+```
+
+### 基本操作
+
+```bash
+# 状態を確認する
+git status
+
+# 変更をステージングする
+git add ファイル名
+git add .          # 全ファイルをステージング
+
+# コミットする
+git commit -m "コミットメッセージ"
+
+# リモートにpushする
+git push -u origin ブランチ名
+
+# リモートからpullする
+git pull origin main
+```
+
+### ブランチ操作
+
+```bash
+# ブランチを作成して切り替える
+git checkout -b feature/ブランチ名
+
+# ブランチを切り替える
+git checkout main
+
+# ブランチ一覧を確認する
+git branch
+```
+
+### 履歴確認
+
+```bash
+# コミット履歴を確認する
+git log --oneline
+```
+
+---
+
 ## 開発の流れ（チーム開発）
 
 ### 1. ブランチを作成する
