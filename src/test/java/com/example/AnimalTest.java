@@ -9,25 +9,25 @@ class AnimalTest {
     @Test
     void testDogName() {
         Dog dog = new Dog("ポチ");
-        assertEquals("ポチ", dog.name);
+        assertEquals("ポチ", dog.getName());
     }
 
     @Test
     void testCatName() {
         Cat cat = new Cat("ミケ");
-        assertEquals("ミケ", cat.name);
+        assertEquals("ミケ", cat.getName());
     }
 
     @Test
     void testBirdName() {
         Bird bird = new Bird("ピヨ");
-        assertEquals("ピヨ", bird.name);
+        assertEquals("ピヨ", bird.getName());
     }
 
     @Test
     void testLionName() {
         Lion lion = new Lion("シンバ");
-        assertEquals("シンバ", lion.name);
+        assertEquals("シンバ", lion.getName());
     }
 
     // Animalを継承しているか

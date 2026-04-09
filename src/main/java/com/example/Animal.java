@@ -12,6 +12,11 @@ public abstract class Animal {
         this.name = name;
     }
 
+    // nameを取得する
+    public String getName() {
+        return name;
+    }
+
     // 共通メソッド: 全動物で同じ
     public void eat() {
         System.out.println(name + " は食べています。");
