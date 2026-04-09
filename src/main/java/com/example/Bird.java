@@ -7,12 +7,14 @@ package com.example;
  */
 public class Bird extends Animal {
 
+    // コンストラクタ: 親クラスのコンストラクタを呼び出す
     public Bird(String name) {
         super(name);
     }
 
+    // 鳥の鳴き声を出力する
     @Override
     public void makeSound() {
-        System.out.println(name + " はチュンチュンと鳴きます！");
+        System.out.println(getName() + " はチュンチュンと鳴きます！");
     }
 }
